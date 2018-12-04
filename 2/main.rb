@@ -30,14 +30,15 @@ def main
     occuringCounts.each do | key, value|
         checkSum *= value
     end
+    # part 1
     puts checkSum
 
     data.each do |base|
         data.each do |compare|
             index = oneDifference(base, compare)
             if index != nil
+                # part 2
                 print base[0...index].to_s + base[index+1..-1].to_s
-
                 return
             end
         end    

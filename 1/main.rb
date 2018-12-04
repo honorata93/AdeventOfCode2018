@@ -19,6 +19,7 @@ def main
         data.each do |change|
             frequency += change  
             if allFrequencies.include?(frequency)
+                # part 2
                 puts frequency
                 return
             else
