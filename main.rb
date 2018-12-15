@@ -4,7 +4,6 @@ def main
     f.close()
     
     print data
-    gets
 end
 
 main
